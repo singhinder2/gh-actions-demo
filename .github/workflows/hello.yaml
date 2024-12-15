@@ -17,3 +17,4 @@ jobs:
       
       - name: Run bash script
         run: ./scripts/sample.sh
+        shell: bash

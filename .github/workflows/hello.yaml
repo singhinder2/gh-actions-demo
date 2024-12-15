@@ -5,8 +5,7 @@ on:
   push:
     tags:
       - "*"
-  pull_request:
-    branches: main
+  issues:
     types: [opened]
 
 jobs:

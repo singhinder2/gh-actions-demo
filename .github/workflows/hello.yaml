@@ -19,3 +19,5 @@ jobs:
           chmod +x ./scripts/sample.sh
           ./scripts/sample.sh
         shell: bash
+        env:
+          REPO: ${{ github.event.repository.name }}

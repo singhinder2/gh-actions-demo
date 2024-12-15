@@ -1,0 +1,17 @@
+name: Hello world
+on:
+  # push:
+  #   branches: main
+  push:
+    tags:
+      - "*"
+  pull_request:
+    branches: main
+    types: [opened]
+
+jobs:
+  sample_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run bash script
+        run: ./scripts/sample.sh

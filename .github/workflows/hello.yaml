@@ -15,5 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Run bash script
-        run: ./scripts/sample.sh
+        run: |
+          chmod +x ./scripts/sample.sh
+          ./scripts/sample.sh
         shell: bash

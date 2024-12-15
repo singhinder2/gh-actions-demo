@@ -6,7 +6,7 @@ on:
     tags:
       - "*"
   issues:
-    types: [opened]
+    types: [opened,edited]
 
 jobs:
   sample_job:

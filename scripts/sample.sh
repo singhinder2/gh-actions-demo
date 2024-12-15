@@ -12,7 +12,8 @@ archive_name="$REPO"-"$GITHUB_REF_NAME"
 
 mkdir build
 
-cd build
-
 git archive --prefix "$REPO"/ -o "$archive_name".zip main
+
 git archive --prefix "$REPO"/ -o "$archive_name".tar.gz main
+
+mv "$archive_name".zip "$archive_name".tar.gz ./build

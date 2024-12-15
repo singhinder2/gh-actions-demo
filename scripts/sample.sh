@@ -10,10 +10,15 @@ echo "REPO=$GITHUB_REPOSITORY"
 
 archive_name="$REPO"-"$GITHUB_REF_NAME"
 
+
+tar -czvf "$archive_name".tar.gz *
+
 mkdir build
 
-git archive --prefix "$REPO"/ -o "$archive_name".zip main
+mv "$archive_name".tar.gz ./build
 
-git archive --prefix "$REPO"/ -o "$archive_name".tar.gz main
+# git archive --prefix "$REPO"/ -o "$archive_name".zip main
 
-mv "$archive_name".zip "$archive_name".tar.gz ./build
+# git archive --prefix "$REPO"/ -o "$archive_name".tar.gz main
+
+# mv "$archive_name".zip "$archive_name".tar.gz ./build

@@ -10,8 +10,9 @@ echo "REPO=$GITHUB_REPOSITORY"
 
 archive_name="$REPO"-"$GITHUB_REF_NAME"
 
+ls -lh
 
-tar -czvf "$archive_name".tar.gz *
+tar -czvf "$archive_name".tar.gz ./github ./scripts
 
 mkdir build
 

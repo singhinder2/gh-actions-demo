@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "GITHUB_REF_NAME=$GITHUB_REF_NAME"
+
+echo "REPO=$GITHUB_REPOSITORY"

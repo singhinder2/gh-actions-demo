@@ -12,7 +12,7 @@ archive_name="$REPO"-"$GITHUB_REF_NAME"
 
 ls -lh
 
-tar -czvf "$archive_name".tar.gz ./github ./scripts
+tar -czvf "$archive_name".tar.gz ./scripts
 
 mkdir build
 
